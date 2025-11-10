@@ -123,7 +123,7 @@ app.post('/api/send-announcement', async (req, res) => {
         SELECT DISTINCT string_field_12 AS owner_ldap
         FROM \`elevate360-poc.hyd_core_data.core-metrics\`
       `
-      // No params needed
+  
     };
   }
 
@@ -147,8 +147,8 @@ app.post('/api/send-announcement', async (req, res) => {
     const templateParams = {
       to_email: recipientEmails,  // This will go to the 'To', 'CC', or 'BCC' field in your template
       message: message,           // The announcement message
-      reply_to: from_email,       // The "from" email you provided
-      from_name: from_email,      // Makes the email appear "from" this person
+      reply_to: from_email,       // The mail provided in the website that wil be reflected to viewer
+      from_name: from_email,      // "from" name for the viewer of the mail
     };
 
     // 8. Send the email

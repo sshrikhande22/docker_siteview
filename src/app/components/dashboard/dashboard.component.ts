@@ -225,27 +225,6 @@ export class DashboardComponent implements OnInit {
       });
   }
 
-  //  async send() {
-  //   console.log('Sending form data:', this.form);
-
-  //   try {
-  //     // ✅ Remove the 4th argument (the public key) from the send function
-  //     const response = await emailjs.send(
-  //       'service_72wkb6j',
-  //       'template_b5q6sbs',
-  //       { ...this.form }
-  //     );
-      
-  //     console.log('SUCCESS!', response.status, response.text);
-  //     alert('Your message has been sent successfully!');
-  //     // Optionally reset the form
-  //     this.form = { message: '' };
-
-  //   } catch (err) {
-  //     console.error('FAILED...', err);
-  //     alert('Failed to send the message. Please try again.');
-  //   }
-  // }
 
   applyFilter() {
 
